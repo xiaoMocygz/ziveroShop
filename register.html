@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./less/normalize.min.css">
+    <link rel="stylesheet" href="./less/register.css">
+</head>
+
+<body>
+    <div id="formContainer" class="dwo">
+        <div class="formLeft">
+            <img src="./image/orange.webp">
+        </div>
+        <div class="formRight">
+            <!-- 忘记密码-->
+            <form id="forgot" class="otherForm">
+                <header>
+                    <h1>忘记密码</h1>
+                    <p>输入邮箱找回密码</p>
+                </header>
+                <section>
+                    <label>
+                        <p>邮箱</p>
+                        <input type="email" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <button type="submit">发送邮件</button>
+                </section>
+                <footer>
+                    <button type="button" class="forgotBtn">返回</button>
+                </footer>
+            </form>
+
+            <!-- 登录 -->
+            <form id="login">
+                <header>
+                    <h1>登录</h1>
+                    <!-- <p>请先登录</p> -->
+                </header>
+                <section>
+                    <label>
+                        <p>用户名</p>
+                        <input type="text" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <label>
+                        <p>密码</p>
+                        <input type="password" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <button type="submit">登 录</button>
+                </section>
+                <footer>
+                    <button type="button" class="forgotBtn">忘记密码？</button>
+                    <button type="button" class="registerBtn">新用户？</button>
+                </footer>
+            </form>
+
+            <!-- 注册-->
+            <form id="register" class="otherForm">
+                <header>
+                    <h1>用户注册</h1>
+                    <p>注册后享受更多服务</p>
+                </header>
+                <section>
+                    <label>
+                        <p>用户名</p>
+                        <input type="text" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <label>
+                        <p>邮箱</p>
+                        <input type="email" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <label>
+                        <p>密码</p>
+                        <input type="password" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <label>
+                        <p>重复密码</p>
+                        <input type="password" placeholder=" ">
+                        <div class="border"></div>
+                    </label>
+                    <button type="submit">注 册</button>
+                </section>
+                <footer>
+                    <button type="button" class="registerBtn">返回</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/register.js"></script>
+</html>
